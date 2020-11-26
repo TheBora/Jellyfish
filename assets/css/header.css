@@ -1,0 +1,44 @@
+header{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header.header-home {
+    background-image: url("../images/bg_piscina.png");
+    height: 100vh;
+}
+
+header.header-pages{    
+    height: 74vh;    
+}
+
+header .imagem-topo{
+    background-image: url("../images/bg-header-2.png");
+    height: 125px;
+}
+
+header .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 578px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .logo {
+    align-self: center;
+    justify-self: center;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+header .logo img {
+    justify-self: center;
+    align-self: center;
+}

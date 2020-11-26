@@ -1,0 +1,34 @@
+nav {
+    background-color: rgba(10, 26, 50, 0.35);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 11vh;
+    min-height: 75px;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrant';
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li.selected {
+    text-decoration: underline;
+}

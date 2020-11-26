@@ -1,0 +1,165 @@
+body {
+    margin: 0px;
+    user-select: none;
+}
+
+.container {
+    padding: 0px 15%;
+    background-color: #fafafa;
+}
+
+section.welcome {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.welcome .title {
+    padding: 30px 0px;
+    font-family: 'Sansita One';
+    font-size: 40px;
+    color: #194380;
+}
+
+section.welcome .text {
+    text-align: center;
+    font-size: 18px;
+    color: #545454;
+    line-height: 140%;
+    padding: 5px;
+}
+
+section.solutions {
+    margin-top: 60px;
+}
+
+section.solutions .title {
+    font-size: 30;
+    font-family: 'Sansita One';
+    color: #194380;
+}
+
+section.solutions hr {
+    border-top: 2px solid #194380;
+}
+
+section.solutions .items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.solutions .items .row {
+    display: flex;
+    padding: 30px 0px;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+section.solutions .item:not(:first-child) {
+    margin-left: 10%;
+}
+
+section.solutions .item {
+    display: flex;
+    width: 40%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background-color: white;
+}
+
+section.solutions .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.solutions .information .title {
+    font-size: 25;
+}
+
+section.solutions .information .text {
+    text-align: center;
+}
+
+.container.show-more {
+    background-color: #194380;
+    color: white;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.container.show-more p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.container.show-more button {
+    background-color: #0CB7D1;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-family: 'Sansita One';
+    outline: none;
+    cursor: pointer;
+}
+
+section.products {
+    margin-top: 60px;
+}
+
+section.products .title {
+    font-size: 30;
+    font-family: 'Sansita One';
+    color: #194380;
+}
+
+section.products hr {
+    border-top: 2px solid #194380;
+}
+
+section.products .list {
+    display: flex;
+    padding-left: 30px;
+    padding-bottom: 50px;
+}
+
+section.products .list .product {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.products .list .product .name {
+    font-size: 23;
+    font-weight: 800;
+    line-height: 28px;
+    color: #69CBDA;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+section.products .list .product .background-product {
+    background-image: url(../images/fundo_produtos.png);
+    background-size: cover;
+    width: 250px;
+    height: 245px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+
+section.products .list .product .background-product img {
+    width: 120px;
+    height: 120px;
+}
