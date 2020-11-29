@@ -1,34 +1,33 @@
-footer .container {
+footer .container-fluid {
     padding-top: 30px;
     padding-bottom: 30px;
-    flex-direction: row;
-    display: flex;
     /* background-color: rgba(105, 203, 218, 0.25); */
     background-color: rgba(105, 203, 218, 0.5);
 }
 
-footer .container div:not(.copyright) {
+footer .container-fluid div:not(.copyright) {
     display: flex;
     flex: 1;
     flex-direction: column;
 }
 
-footer .container .title {
+footer .container-fluid .title {
     color: #194380;
     font-family: 'Montserrant';
     font-size: 21px;
     font-weight: bold;
 }
 
-footer .container p {
+footer .container-fluid p {
     font-size: 20px;
     color: #545454;
 }
 
-footer .container .icon {
+
+/* footer .container .icon {
     position: relative;
     top: 5;
-}
+} */
 
 footer .copyright {
     background-color: #194380;

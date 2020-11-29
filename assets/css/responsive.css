@@ -1,0 +1,23 @@
+@media(max-width: 991px) {
+    section.solutions {
+        display: none;
+    }
+    section.solutions2 {
+        display: inherit!important;
+    }
+}
+
+@media(max-width: 768px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    .title {
+        text-align: center!important;
+        font-size: 1rem;
+    }
+}

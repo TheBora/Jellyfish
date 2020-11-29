@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jellyfish Piscinas</title>
 
     <!--css imports-->
@@ -12,7 +13,17 @@
     <link href="assets/css/nav.css" rel="stylesheet" />
     <link href="assets/css/home.css" rel="stylesheet" />
     <link href="assets/css/footer.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
 
+    <!--import frameworks-->
+    <!--animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!--import fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/bf4da02de4.css">
+
+    <!--import bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -27,90 +38,151 @@
                 </ul>
             </nav>
 
-            <div class="logo">
+            <div class="logo wow bounceInUp" data-wow-duration="2s">
                 <img src="assets/images/Logo Jellyfish branco.png" />
             </div>
         </div>
     </header>
 
-    <div class="container">
-        <section class="welcome">
-            <span class="title">Bem vindos!</span>
-            <p class="text">Que tal ter uma piscina em casa? No verão é muito refrescante e para o inverno você pode optar por um sistema de aquecimento. Relaxar na água, junto com a família, depois daquele dia cansativo. Pode ser o que você precisa!<br> Temos muitas
-                opções de piscinas, serviços e produtos especializados, confira!
-            </p>
-        </section>
-
-        <section class="solutions">
-            <span class="title">Soluções Jellyfish</span>
-
-            <hr />
-
-            <div class="items">
-                <div class="row">
-                    <div class="item">
-                        <div class="image">
-                            <img src="assets/images/solucao1.png" />
-                        </div>
-
-                        <div class="information">
-                            <span class="title">Limpeza</span>
-                            <span class="text">Agende sua limpeza com nosso time!</span>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="image">
-                            <img src="assets/images/solucao2.png" />
-                        </div>
-
-                        <div class="information">
-                            <span class="title">Manutenção</span>
-                            <span class="text">Oferecemos também serviços de manutenção.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="item">
-                        <div class="image">
-                            <img src="assets/images/solucao3.png" />
-                        </div>
-
-                        <div class="information">
-                            <span class="title">Reformas</span>
-                            <span class="text">Precisa mudar sua piscina? Nossos projetistas podem ajudar.</span>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="image">
-                            <img src="assets/images/solucao4.png" />
-                        </div>
-
-                        <div class="information">
-                            <span class="title">Instalação</span>
-                            <span class="text">Com agilidade, organização e limpeza.</span>
-                        </div>
-                    </div>
-                </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <section class="welcome">
+                    <span class="title wow fadeInDown" data-wow-duration="2s">Bem vindos!</span>
+                    <p class="text wow fadeInDown" data-wow-duration="2s">Que tal ter uma piscina em casa? No verão é muito refrescante e para o inverno você pode optar por um sistema de aquecimento. Relaxar na água, junto com a família, depois daquele dia cansativo. Pode ser o que você precisa!<br> Temos
+                        muitas opções de piscinas, serviços e produtos especializados, confira!
+                    </p>
+                </section>
             </div>
-        </section>
+
+            <section class="solutions">
+                <span class="title wow fadeInRight" data-wow-duration="2s">Soluções Jellyfish</span>
+
+                <hr />
+
+                <div class="row items">
+                    <div class="row">
+                        <div class="item wow fadeInLeft">
+                            <div class="image">
+                                <img src="assets/images/solucao1.png" />
+                            </div>
+
+                            <div class="information">
+                                <span class="title">Limpeza</span>
+                                <span class="text">Agende sua limpeza com nosso time!</span>
+                            </div>
+                        </div>
+
+                        <div class="item wow fadeInRight">
+                            <div class="image">
+                                <img src="assets/images/solucao2.png" />
+                            </div>
+
+                            <div class="information">
+                                <span class="title">Manutenção</span>
+                                <span class="text">Oferecemos também serviços de manutenção.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="item wow fadeInLeft" data-wow-delay="0.5s">
+                            <div class="image">
+                                <img src="assets/images/solucao3.png" />
+                            </div>
+
+                            <div class="information">
+                                <span class="title">Reformas</span>
+                                <span class="text">Precisa mudar sua piscina? Nossos projetistas podem ajudar.</span>
+                            </div>
+                        </div>
+
+                        <div class="item wow fadeInRight" data-wow-delay="0.5s">
+                            <div class="image">
+                                <img src="assets/images/solucao4.png" />
+                            </div>
+
+                            <div class="information">
+                                <span class="title">Instalação</span>
+                                <span class="text">Com agilidade, organização e limpeza.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="solutions2 d-none">
+                <span class="title wow fadeInRight" data-wow-duration="2s">Soluções Jellyfish</span>
+
+                <hr />
+
+                <div class="row items">
+                    <div class="row">
+                        <div class="item wow fadeInLeft">
+                            <div class="image">
+                                <img src="assets/images/solucao1.png" />
+                            </div>
+
+                            <div class="information">
+                                <span class="title">aaaaaa</span>
+                                <span class="text">Agende sua limpeza com nosso time!</span>
+                            </div>
+                        </div>
+
+                        <div class="item wow fadeInRight">
+                            <div class="image">
+                                <img src="assets/images/solucao2.png" />
+                            </div>
+
+                            <div class="information">
+                                <span class="title">Manutenção</span>
+                                <span class="text">Oferecemos também serviços de manutenção.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="item wow fadeInLeft" data-wow-delay="0.5s">
+                            <div class="image">
+                                <img src="assets/images/solucao3.png" />
+                            </div>
+
+                            <div class="information">
+                                <span class="title">Reformas</span>
+                                <span class="text">Precisa mudar sua piscina? Nossos projetistas podem ajudar.</span>
+                            </div>
+                        </div>
+
+                        <div class="item wow fadeInRight" data-wow-delay="0.5s">
+                            <div class="image">
+                                <img src="assets/images/solucao4.png" />
+                            </div>
+
+                            <div class="information">
+                                <span class="title">Instalação</span>
+                                <span class="text">Com agilidade, organização e limpeza.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
     </div>
 
-    <div class="container show-more">
-        <div>
-            <p>Temos diversas opções de piscinas e projetos diferentes para você conhecer.<br> Na Jellyfish você conta com uma equipe de especialistas prontos para te atende e tirar suas dúvidas.<br> Entre em contato com a gente ou venha nos visitar.</p>
+    <div class="container-fluid show-more">
+        <div class="container">
+            <p class="wow fadeIn">Temos diversas opções de piscinas e projetos diferentes para você conhecer.<br> Na Jellyfish você conta com uma equipe de especialistas prontos para te atende e tirar suas dúvidas.<br> Entre em contato com a gente ou venha nos visitar.</p>
         </div>
 
-        <div>
+        <div class="wow bounceIn" data-wow-duration="1.5s">
             <a href="modelos.html"><button>Ver mais</button></a>
         </div>
     </div>
 
     <div class="container">
         <section class="products">
-            <span class="title">Nossos Produtos</span>
+            <span class="title wow fadeInLeft" data-wow-duration="2s">Nossos Produtos</span>
             <hr />
 
             <div class="list">
@@ -137,28 +209,32 @@
     </div>
 
     <footer>
-        <div class="container information">
-            <div>
-                <span class="title">Horário de Atendimento</span>
-                <p>
-                    Seg a Sex - Das 08h às 17h <br /> Sábados - Das 09h às 16h <br /> Domingos - Das 09h às 14h
-                </p>
-            </div>
+        <div class="container-fluid information">
+            <div class="row d-flex">
+                <div class="container">
+                    <div class="col-md-4 col-sm-12">
+                        <span class="title">Horário de Atendimento</span>
+                        <p>
+                            Seg a Sex - Das 08h às 17h <br /> Sábados - Das 09h às 16h <br /> Domingos - Das 09h às 14h
+                        </p>
+                    </div>
 
-            <div>
-                <span class="title">Contato</span>
-                <p>
-                    <img src="assets/images/telefone_icon.png" class="icon" /> (11) 4184-8404 <br />
-                    <img src="assets/images/whatsapp_icon.png" class="icon" /> (11) 9 5414-7543 <br />
-                    <img src="assets/images/correio_icon.png" class="icon" /> contato@jellyfish.com.br
-                </p>
-            </div>
+                    <div class="col-md-4 col-sm-12">
+                        <span class="title">Contato</span>
+                        <p>
+                            <img src="assets/images/telefone_icon.png" class="icon" /> (11) 4184-8404 <br />
+                            <img src="assets/images/whatsapp_icon.png" class="icon" /> (11) 9 5414-7543 <br />
+                            <img src="assets/images/correio_icon.png" class="icon" /> contato@jellyfish.com.br
+                        </p>
+                    </div>
 
-            <div>
-                <span class="title">Endereço</span>
-                <p>
-                    <img src="assets/images/marcador_icon.png" class="icon" />Av. Francisco Pignatari, 650 <br /> Vila Gustavo Correia, Carapicuiba
-                </p>
+                    <div class="col-md-4 col-sm-12">
+                        <span class="title">Endereço</span>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>Av. Francisco Pignatari, 650 <br /> Vila Gustavo Correia, Carapicuiba
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -167,6 +243,17 @@
         </div>
 
     </footer>
+
+    <!--import wow-->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!--import bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
