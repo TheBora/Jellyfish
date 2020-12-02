@@ -1,9 +1,11 @@
-header {
-    height: 20vh;
-}
+@media (min-width: 720) {
+    header {
+        height: 20vh;
+    }
 
-header .layer {
-    height: 20vh;
+    header .layer {
+        height: 20vh;
+    }
 }
 
 .container {
@@ -15,10 +17,25 @@ header .layer {
     background-image: url(../images/bg_fale_conosco.png);
     background-repeat: no-repeat;
     background-size: 85% 100%;
-    height: 110vh;
-    width: 49%;
-    float: left;
-    margin-bottom: 90px;
+    /* height: 110vh; */
+    /* width: 49%; */
+    /* float: left; */
+    /* margin-bottom: 90px; */
+}
+
+@media all and (min-width: 576) {
+    .container section {
+        height: initial;
+    }
+}
+
+@media all and (min-width: 720) {
+    .container section {
+        height: 110vh;
+    }
+    .container aside {
+        margin-bottom: 90px;
+    }
 }
 
 .container section .text {
@@ -30,9 +47,9 @@ header .layer {
 }
 
 .container aside {
-    width: 50%;
-    float: right;
-    margin-bottom: 90px;
+    /* width: 50%; */
+    /* float: right; */
+    /* margin-bottom: 90px; */
 }
 
 .container aside p {
@@ -106,11 +123,11 @@ textarea {
 
 .map {
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
     max-height: 270px;
     clear: both;
     position: relative;
-    top: 50px;
+    top: 40px;
 }
 
 .map img {

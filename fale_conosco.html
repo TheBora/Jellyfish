@@ -12,6 +12,10 @@
     <link href="assets/css/nav.css" rel="stylesheet" />
     <link href="assets/css/fale_conosco.css" rel="stylesheet" />
     <link href="assets/css/footer.css" rel="stylesheet" />
+
+    <!--import bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -30,78 +34,99 @@
     </header>
 
     <div class="container">
-        <section>
-            <p class="text">
-                Entre em <br /> contato <br /> conosco!
-            </p>
-        </section>
+        <div class="row justify-content-center">
+            <section class="col-sm-11 col-lg-6">
+                <p class="text">
+                    Entre em <br /> contato <br /> conosco!
+                </p>
+            </section>
 
-        <aside>
-            <p>
-                Por favor preencha o formulário abaixo e um de nossos representantes entrará em contato com você em breve.
-            </p>
-
-            <form method="POST" enctype="application/x-www-form-urlencoded">
-                <div class="input-box">
-                    <span>Qual é o seu nome?</span> <br />
-                    <input name="nome" maxlength="40" type="text" required/>
-                </div>
-
-                <div class="input-box">
-                    <span>Deixe seu email:</span><br />
-                    <input name="email" maxlength="50" type="email" required/>
-                </div>
-
-                <div class="input-box">
-                    <span>Qual é o seu telefone?</span><br />
-                    <input name="telefone" maxlength="15" type="tel" required/>
-                </div>
-
-                <div class="input-box">
-                    <span>Qual é o motivo do contato?</span><br />
-                    <input name="ctt" maxlength="50" type="text" required/>
-                </div>
-
-                <div class="input-box">
-                    <span>Deixe seu comentário:</span><br />
-                    <textarea rows="5" maxlength="500" required></textarea>
-                </div>
-
-                <div class="buttons">
-                    <div class="">
-                        <button class="btn btn-limpar" type="reset">Limpar</button>
-                        <button class="btn btn-enviar" type="submit">Enviar</button>
+            <aside class="col-sm-12 col-lg-6">
+                <div class="row">
+                    <div class="col-sm-11">
+                        <p>
+                            Por favor preencha o formulário abaixo e um de nossos representantes entrará em contato com
+                            você
+                            em
+                            breve.
+                        </p>
                     </div>
                 </div>
-            </form>
-        </aside>
+
+                <form method="POST" enctype="application/x-www-form-urlencoded">
+                    <div class="row">
+                        <div class="col-sm-11">
+                            <div class="form-group input-group-lg col-sm-12">
+                                <label for="nome">Qual é o seu nome?</label>
+                                <input name="nome" aria-label="Large" class="form-control" maxlength="40" type="text" required />
+                            </div>
+
+                            <div class="form-group input-group-lg col-sm-12">
+                                <span>Deixe seu email:</span><br />
+                                <input name="email" aria-label="Large" class="form-control" maxlength="50" type="email" required />
+                            </div>
+
+                            <div class="form-group input-group-lg col-sm-12">
+                                <span>Qual é o seu telefone?</span><br />
+                                <input name="telefone" aria-label="Large" class="form-control" maxlength="15" type="tel" required />
+                            </div>
+
+                            <div class="form-group input-group-lg col-sm-12">
+                                <span>Qual é o motivo do contato?</span><br />
+                                <input name="ctt" aria-label="Large" class="form-control" maxlength="50" type="text" required />
+                            </div>
+
+                            <div class="form-group input-group-lg col-sm-12">
+                                <span>Deixe seu comentário:</span><br />
+                                <textarea rows="5" aria-label="Large" class="form-control" maxlength="500" required></textarea>
+                            </div>
+
+                            <div class="buttons form-group col-sm-12">
+                                <div class="">
+                                    <button class="btn btn-limpar" type="reset">Limpar</button>
+                                    <button class="btn btn-enviar" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </aside>
+        </div>
     </div>
 
-    <div class="map">
-        <img src="assets/images/mapa.png" />
+    <div class="row">
+        <div class="col-sm-12 map">
+            <img src="assets/images/mapa.png" />
+        </div>
     </div>
+
+
     <footer>
         <div class="container information">
-            <div>
-                <span class="title">Horário de Atendimento</span>
-                <p>
-                    Seg a Sex - Das 08h às 17h <br /> Sábados - Das 09h às 16h <br /> Domingos - Das 09h às 14h
-                </p>
-            </div>
-
-            <div>
-                <span class="title">Contato</span>
-                <p>
-                    <img src="assets/images/telefone_icon.png" class="icon" /> (11) 4184-8404 <br />
-                    <img src="assets/images/whatsapp_icon.png" class="icon" /> (11) 9 5414-7543 <br />
-                    <img src="assets/images/correio_icon.png" class="icon" /> contato@jellyfish.com.br
-                </p>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <span class="title">Horário de Atendimento</span>
+                    <p>
+                        Seg a Sex - Das 08h às 17h <br /> Sábados - Das 09h às 16h <br /> Domingos - Das 09h às 14h
+                    </p>
+                </div>
+                
+                <div class="col-sm-6">
+                    <span class="title">Contato</span>
+                    <p>
+                        <img src="assets/images/telefone_icon.png" class="icon" /> (11) 4184-8404 <br />
+                        <img src="assets/images/whatsapp_icon.png" class="icon" /> (11) 9 5414-7543 <br />
+                        <img src="assets/images/correio_icon.png" class="icon" /> contato@jellyfish.com.br
+                    </p>
+                </div>
             </div>
 
             <div>
                 <span class="title">Endereço</span>
                 <p>
-                    <img src="assets/images/marcador_icon.png" class="icon" />Av. Francisco Pignatari, 650 <br /> Vila Gustavo Correia, Carapicuiba
+                    <img src="assets/images/marcador_icon.png" class="icon" />Av. Francisco Pignatari, 650 <br /> Vila
+                    Gustavo Correia, Carapicuiba
                 </p>
             </div>
         </div>
