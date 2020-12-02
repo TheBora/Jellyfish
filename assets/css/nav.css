@@ -2,12 +2,25 @@ nav {
     background-color: rgba(10, 26, 50, 0.35);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    height: 11vh;
     min-height: 75px;
     width: 50%;
     justify-content: center;
     display: flex;
 }
+
+@media (min-width: 576) {
+    .container section {
+        height: initial;
+    }
+}
+
+@media (min-width: 720) {
+    .container section {
+        height: 11vh;
+    }
+}
+
+
 
 nav ul {
     list-style-type: none;
