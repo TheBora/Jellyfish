@@ -8,7 +8,8 @@ footer .container-fluid {
 footer .container-fluid div:not(.copyright) {
     display: flex;
     flex: 1;
-    flex-direction: column;
+    align-items: flex-start;
+    flex-flow: wrap;
 }
 
 footer .container-fluid .title {
@@ -16,18 +17,13 @@ footer .container-fluid .title {
     font-family: 'Montserrant';
     font-size: 21px;
     font-weight: bold;
+    min-width: 70vh;
 }
 
 footer .container-fluid p {
     font-size: 20px;
     color: #545454;
 }
-
-
-/* footer .container .icon {
-    position: relative;
-    top: 5;
-} */
 
 footer .copyright {
     background-color: #194380;
@@ -37,4 +33,12 @@ footer .copyright {
     display: flex;
     font-size: 17px;
     font-family: 'Montserrant';
+}
+
+
+@media (min-width: 700px) {
+    footer .container-fluid{
+        flex-direction: column !important;
+    }
+    
 }

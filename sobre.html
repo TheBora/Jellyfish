@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -12,91 +12,103 @@
     <link href="assets/css/nav.css" rel="stylesheet" />
     <link href="assets/css/sobre.css" rel="stylesheet" />
     <link href="assets/css/footer.css" rel="stylesheet" />
-
+    <!--import bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header class="header-pages">
         <div class="imagem-topo"></div>
-        <div class="layer">
-            <nav>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="modelos.html">modelos</a></li>
-                    <li class="selected"><a href="sobre.html">sobre nós</a></li>
-                    <li><a href="fale_conosco.html">fale conosco</a></li>
-                </ul>
-            </nav>
+        <div class="row">
+            <div class="layer">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="modelos.html">modelos</a></li>
+                        <li><a href="sobre.html">sobre nós</a></li>
+                        <li><a href="fale_conosco.html">fale conosco</a></li>
+                    </ul>
+                </nav>
+                <div class="image-layer">
+                    <img src="assets/images/bg_borda_piscina.png" />
+                </div>
 
-            <div class="image-layer">
-                <img src="assets/images/bg_borda_piscina.png" />
-            </div>
-
-            <div class="image-text">
-                <span>Sobre nós</span>
+                <div class="image-text">
+                    <span>Sobre nós</span>
+                </div>
             </div>
         </div>
     </header>
+    
+        
+        <section class="container sobre">
+            <div class="row sector-margin">        
+                <div id="imagemlogo" class="col-sm-2 col-md-6">
+                    <img src="assets/images/jellyfish-logo.png" />
+                </div>
+                <div id="sobrejelly" class="col-sm-2 col-md-6">
+                    <p class="subtitulo">A Jellyfish</p>
+                        <p class="texto">A Jellyfish Piscinas foi fundada em 2010, percebemos a necessidade de uma empresa fullservice no mundo das piscinas. Então inovamos. Com o objetivo de promover mais qualidade fornecemos tudo. Relizamos construções, manutenções, reformas,
+                            limpeza e ainda contamos com uma loja repleta de acessórios e produtos.</p>
+                </div>
+            </div>        
+        </section>
 
     <section class="container sobre">
-        <div id="imagemlogo">
-            <img src="assets/images/jellyfish-logo.png" />
-        </div>
-        <div id="sobrejelly">
-            <p class="subtitulo">A Jellyfish</span>
-                <p class="texto">A Jellyfish Piscinas foi fundada em 2010, percebemos a necessidade de uma empresa fullservice no mundo das piscinas. Então inovamos. Com o objetivo de promover mais qualidade fornecemos tudo. Relizamos construções, manutenções, reformas,
-                    limpeza e ainda contamos com uma loja repleta de acessórios e produtos.</p>
-        </div>
-
-    </section>
-
-    <section class="container sobre">
-
-        <span class="titulo-sobre">Nossos Valores</span>
-        <hr />
-        <div id="valores">
-            <ul>
-                <li><span>✓</span>Paixão em tudo que fazemos. É o nosso compromisso diário.</li>
-                <li><span>✓</span>Satisfação do cliente. Nosso foco sempre.</li>
-                <li><span>✓</span>Transparência sempre.</li>
-                <li><span>✓</span>Visão de longo prazo</li>
-                <li><span>✓</span>Agir com simplicidade</li>
-                <li><span>✓</span>Orgulho do que realizamos</li>
+        <div class="row sector-margin">
+            <div class="col-lg-12">
+                <span class="titulo-sobre">Nossos Valores</span>
+                <hr />
+            </div>
+            <div id="valores" class="col-sm-2 col-md-8">
                 <ul>
+                    <li class="lista-valores-item"><span>✓</span>Paixão em tudo que fazemos. É o nosso compromisso diário.</li>
+                    <li class="lista-valores-item"><span>✓</span>Satisfação do cliente. Nosso foco sempre.</li>
+                    <li><span>✓</span>Transparência sempre.</li>
+                    <li><span>✓</span>Visão de longo prazo</li>
+                    <li><span>✓</span>Agir com simplicidade</li>
+                    <li><span>✓</span>Orgulho do que realizamos</li>
+                    <ul>
+            </div>
+            <div class="col-md-4">
+                <img id="imagemvalores" src="assets/images/img-boia.png" />
+            </div>
         </div>
-
-        <img id="imagemvalores" src="assets/images/img-boia.png" />
-
     </section>
     <footer>
-        <div class="container information">
-            <div>
-                <span class="title">Horário de Atendimento</span>
-                <p>
-                    Seg a Sex - Das 08h às 17h <br /> Sábados - Das 09h às 16h <br /> Domingos - Das 09h às 14h
-                </p>
-            </div>
-            <div>
-                <span class="title">Contato</span>
-                <p>
-                    <img src="assets/images/telefone_icon.png" class="icon" /> (11) 4184-8404 <br />
-                    <img src="assets/images/whatsapp_icon.png" class="icon" /> (11) 9 5414-7543 <br />
-                    <img src="assets/images/correio_icon.png" class="icon" /> contato@jellyfish.com.br
-                </p>
-            </div>
+        <div class="container-fluid information">
+            <div class="row d-flex">
+                <div class="container">
+                    <div class="col-md-4 col-sm-12">
+                        <span class="title">Horário de Atendimento</span>
+                        <p>
+                            Seg a Sex - Das 08h às 17h <br /> Sábados - Das 09h às 16h <br /> Domingos - Das 09h às 14h
+                        </p>
+                    </div>
 
-            <div>
-                <span class="title">Endereço</span>
-                <p>
-                    <img src="assets/images/marcador_icon.png" class="icon" />Av. Francisco Pignatari, 650 <br /> Vila Gustavo Correia, Carapicuiba
-                </p>
+                    <div class="col-md-4 col-sm-12">
+                        <span class="title">Contato</span>
+                        <p>
+                            <img src="assets/images/telefone_icon.png" class="icon" /> (11) 4184-8404 <br />
+                            <img src="assets/images/whatsapp_icon.png" class="icon" /> (11) 9 5414-7543 <br />
+                            <img src="assets/images/correio_icon.png" class="icon" /> contato@jellyfish.com.br
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <span class="title">Endereço</span>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>Av. Francisco Pignatari, 650 <br /> Vila Gustavo Correia, Carapicuiba
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="copyright">
             <span>Todos os Direitos Reservados | Jellyfish Piscinas 2020 &copy;</span>
         </div>
-
     </footer>
 </body>
 
