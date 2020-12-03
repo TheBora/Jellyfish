@@ -57,12 +57,18 @@ section.solutions .item:not(:first-child) {
     margin-left: 10%;
 }
 
-section.solutions .item {
+section.solutions .item,
+section.solutions2 .card {
     display: flex;
     width: 40%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     background-color: white;
+}
+
+section.solutions2 .card {
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 section.solutions .information {
@@ -159,6 +165,10 @@ section.products .list .product .background-product {
 section.products .list .product .background-product img {
     width: 120px;
     height: 120px;
+}
+
+.product {
+    margin: 25px 0 20px 0;
 }
 
 .image img {

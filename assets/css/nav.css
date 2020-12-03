@@ -9,7 +9,6 @@ nav {
     text-align: center;
 }
 
-
 nav ul {
     list-style-type: none;
     justify-self: center;
@@ -34,6 +33,12 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: white;
+}
+
+nav ul li.selected {
+    text-decoration: underline;
+    color: white;
 }
 
 @media (min-width: 576) {
@@ -47,4 +52,3 @@ nav ul li a:hover {
         height: 11vh;
     }
 }
-
