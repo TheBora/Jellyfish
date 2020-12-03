@@ -172,6 +172,9 @@
                 if (event.target.checkValidity() == false) {
                     event.preventDefault();
                     event.stopPropagation();
+                } 
+                else {
+                    alert("Mensagem enviada\nObrigado por enviar sua mensagem, retornaremos em breve.");
                 }
                 event.target.classList.add('was-validated');
             });
