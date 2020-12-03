@@ -8,25 +8,14 @@ nav {
     display: flex;
 }
 
-@media (min-width: 576) {
-    .container section {
-        height: initial;
-    }
-}
-
-@media (min-width: 720) {
-    .container section {
-        height: 11vh;
-    }
-}
-
-
 
 nav ul {
     list-style-type: none;
     justify-self: center;
     display: flex;
     align-items: center;
+    justify-content: center;
+    line-height: 75px;
 }
 
 nav ul li {
@@ -45,3 +34,16 @@ nav ul li a {
 nav ul li.selected {
     text-decoration: underline;
 }
+
+@media (min-width: 576) {
+    .container section {
+        height: initial;
+    }
+}
+
+@media (min-width: 720) {
+    .container section {
+        height: 11vh;
+    }
+}
+

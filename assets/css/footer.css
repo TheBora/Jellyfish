@@ -7,7 +7,6 @@ footer .container-fluid {
 
 footer .container-fluid div:not(.copyright) {
     display: flex;
-    flex: 1;
     align-items: flex-start;
     flex-flow: wrap;
 }
@@ -17,7 +16,7 @@ footer .container-fluid .title {
     font-family: 'Montserrant';
     font-size: 21px;
     font-weight: bold;
-    min-width: 70vh;
+    width: 100%;
 }
 
 footer .container-fluid p {
@@ -35,10 +34,8 @@ footer .copyright {
     font-family: 'Montserrant';
 }
 
-
 @media (min-width: 700px) {
-    footer .container-fluid{
+    footer .container-fluid {
         flex-direction: column !important;
     }
-    
 }

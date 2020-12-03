@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fale Conosco | Jellyfish</title>
 
     <!--css imports-->
@@ -11,74 +12,90 @@
     <link href="assets/css/header.css" rel="stylesheet" />
     <link href="assets/css/nav.css" rel="stylesheet" />
     <link href="assets/css/fale_conosco.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
     <link href="assets/css/footer.css" rel="stylesheet" />
+
+    <!--import fontawesome-->
+    <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!--import bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
     <header>
         <div class="imagem-topo"></div>
-        <div class="layer">
-            <nav>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="modelos.html">modelos</a></li>
-                    <li><a href="sobre.html">sobre nós</a></li>
-                    <li class="selected"><a href="#">fale conosco</a></li>
-                </ul>
-            </nav>
+        <div class="row">
+            <div class="layer">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="modelos.html">modelos</a></li>
+                        <li><a href="sobre.html">sobre nós</a></li>
+                        <li class="selected"><a href="#">fale conosco</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <div class="container">
-        <section>
-            <p class="text">
-                Entre em <br /> contato <br /> conosco!
-            </p>
-        </section>
+        <div class="row">
+            <section class="col-sm-12 col-lg-6">
+                <p class="text text-fale-conosco">
+                    Entre em <br /> contato <br /> conosco!
+                </p>
+            </section>
 
-        <aside>
-            <p>
-                Por favor preencha o formulário abaixo e um de nossos representantes entrará em contato com você em breve.
-            </p>
+            <aside class="col-sm-12 col-lg-6">
+                <p>
+                    Por favor preencha o formulário abaixo e um de nossos representantes entrará em contato com você em
+                    breve.
+                </p>
 
-            <form method="POST" enctype="application/x-www-form-urlencoded">
-                <div class="input-box">
-                    <span>Qual é o seu nome?</span> <br />
-                    <input name="nome" maxlength="40" type="text" required/>
-                </div>
-
-                <div class="input-box">
-                    <span>Deixe seu email:</span><br />
-                    <input name="email" maxlength="50" type="email" required/>
-                </div>
-
-                <div class="input-box">
-                    <span>Qual é o seu telefone?</span><br />
-                    <input name="telefone" maxlength="15" type="tel" required/>
-                </div>
-
-                <div class="input-box">
-                    <span>Qual é o motivo do contato?</span><br />
-                    <input name="ctt" maxlength="50" type="text" required/>
-                </div>
-
-                <div class="input-box">
-                    <span>Deixe seu comentário:</span><br />
-                    <textarea rows="5" maxlength="500" required></textarea>
-                </div>
-
-                <div class="buttons">
-                    <div class="">
-                        <button class="btn btn-limpar" type="reset">Limpar</button>
-                        <button class="btn btn-enviar" type="submit">Enviar</button>
+                <form method="POST" enctype="application/x-www-form-urlencoded">
+                    <div class="input-box">
+                        <span>Qual é o seu nome?</span> <br />
+                        <input name="nome" maxlength="40" type="text" required />
                     </div>
-                </div>
-            </form>
-        </aside>
+
+                    <div class="input-box">
+                        <span>Deixe seu email:</span><br />
+                        <input name="email" maxlength="50" type="email" required />
+                    </div>
+
+                    <div class="input-box">
+                        <span>Qual é o seu telefone?</span><br />
+                        <input name="telefone" maxlength="15" type="tel" required />
+                    </div>
+
+                    <div class="input-box">
+                        <span>Qual é o motivo do contato?</span><br />
+                        <input name="ctt" maxlength="50" type="text" required />
+                    </div>
+
+                    <div class="input-box">
+                        <span>Deixe seu comentário:</span><br />
+                        <textarea rows="5" maxlength="500" required></textarea>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="">
+                            <button class="btn btn-limpar" type="reset">Limpar</button>
+                            <button class="btn btn-enviar" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </aside>
+        </div>
     </div>
 
-    <div class="map">
-        <img src="assets/images/mapa.png" />
+    <div class="row">
+        <div class="map">
+            <img src="assets/images/mapa.png" />
+        </div>
     </div>
     <footer>
         <div class="container-fluid information">
@@ -87,33 +104,53 @@
                     <div class="col-md-4 col-sm-12">
                         <span class="title">Horário de Atendimento</span>
                         <p>
-                            Seg a Sex - Das 08h às 17h <br /> Sábados - Das 09h às 16h <br /> Domingos - Das 09h às 14h
+                            Seg a Sex - Das 08h às 17h <br> Sábados - Das 09h às 16h <br> Domingos - Das 09h às 14h
                         </p>
                     </div>
 
                     <div class="col-md-4 col-sm-12">
                         <span class="title">Contato</span>
                         <p>
-                            <img src="assets/images/telefone_icon.png" class="icon" /> (11) 4184-8404 <br />
-                            <img src="assets/images/whatsapp_icon.png" class="icon" /> (11) 9 5414-7543 <br />
-                            <img src="assets/images/correio_icon.png" class="icon" /> contato@jellyfish.com.br
+                            <img src="assets/images/telefone_icon.png" class="icon"> (11) 4184-8404 <br>
+                            <img src="assets/images/whatsapp_icon.png" class="icon"> (11) 9 5414-7543 <br>
+                            <img src="assets/images/correio_icon.png" class="icon"> contato@jellyfish.com.br
                         </p>
                     </div>
 
                     <div class="col-md-4 col-sm-12">
                         <span class="title">Endereço</span>
                         <p>
-                            <i class="fas fa-map-marker-alt"></i>Av. Francisco Pignatari, 650 <br /> Vila Gustavo Correia, Carapicuiba
+                            <i class="fas fa-map-marker-alt"></i>Av. Francisco Pignatari, 650 <br> Vila Gustavo Correia,
+                            Carapicuiba
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="copyright">
-            <span>Todos os Direitos Reservados | Jellyfish Piscinas 2020 &copy;</span>
+        <div class="copyright text-center">
+            <span>Todos os Direitos Reservados<br />Jellyfish Piscinas 2020 ©</span>
         </div>
     </footer>
+
+    <!--import wow-->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: false,
+            live: true // default
+        })
+        wow.init();
+    </script>
+
+    <!--import jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
