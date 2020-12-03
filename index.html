@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jellyfish Piscinas</title>
-
+    <link href="assets/images/iconjf.png" rel="icon" />
     <!--css imports-->
     <link href="assets/css/fonts.css" rel="stylesheet" />
     <link href="assets/css/base.css" rel="stylesheet" />
@@ -15,12 +15,13 @@
     <link href="assets/css/footer.css" rel="stylesheet" />
     <link href="assets/css/responsive.css" rel="stylesheet" />
 
+
     <!--import frameworks-->
     <!--animate-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <!--import fontawesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/bf4da02de4.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
     <!--import bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -215,38 +216,44 @@
                     <div class="col-md-4 col-sm-12">
                         <span class="title">Horário de Atendimento</span>
                         <p>
-                            Seg a Sex - Das 08h às 17h <br /> Sábados - Das 09h às 16h <br /> Domingos - Das 09h às 14h
+                            Seg à Sex - Das 08h às 17h <br /> Sábados - Das 09h às 16h <br /> Domingos - Das 09h às 14h
                         </p>
                     </div>
 
                     <div class="col-md-4 col-sm-12">
                         <span class="title">Contato</span>
                         <p>
-                            <img src="assets/images/telefone_icon.png" class="icon" /> (11) 4184-8404 <br />
-                            <img src="assets/images/whatsapp_icon.png" class="icon" /> (11) 9 5414-7543 <br />
-                            <img src="assets/images/correio_icon.png" class="icon" /> contato@jellyfish.com.br
+                            <i class="fa fa-phone" aria-hidden="true"></i> (11) 4184-8404 <br />
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i> (11) 9 5414-7543 <br />
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i> contato@jellyfish.com.br
                         </p>
                     </div>
 
                     <div class="col-md-4 col-sm-12">
                         <span class="title">Endereço</span>
                         <p>
-                            <i class="fas fa-map-marker-alt"></i>Av. Francisco Pignatari, 650 <br /> Vila Gustavo Correia, Carapicuiba
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> Av. Francisco Pignatari, 650 <br /> Vila Gustavo Correia, Carapicuiba
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="copyright">
-            <span>Todos os Direitos Reservados | Jellyfish Piscinas 2020 &copy;</span>
+        <div class="copyright text-center">
+            <span>Todos os Direitos Reservados<br/>Jellyfish Piscinas 2020 &copy;</span>
         </div>
     </footer>
 
     <!--import wow-->
     <script src="assets/js/wow.min.js"></script>
     <script>
-        new WOW().init();
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: false,
+            live: true // default
+        })
+        wow.init();
     </script>
 
     <!--import bootstrap-->

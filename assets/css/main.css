@@ -1,12 +1,14 @@
 body {
     margin: 0px;
     user-select: none;
+    overflow: hidden;
 }
 
-.container {
+
+/* .container {
     padding: 0px 15%;
     background-color: #fafafa;
-}
+} */
 
 section.welcome {
     display: flex;
